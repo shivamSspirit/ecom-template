@@ -1,0 +1,57 @@
+.carouselitem-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.c-title {
+    width: 100%;
+    font-size: 60px;
+    color: #ffffff;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 0 auto;
+}
+
+.c-btn {
+    width: 15%;
+    margin: 0 auto;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #252525;
+    text-align: center;
+    padding: 10px 0px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 860px) {
+    .c-title {
+        font-size: 40px;
+        color: #ffffff;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+
+    .c-btn {
+        width: 40%;
+    }
+}
+
+@media only screen and (max-width: 860px) {
+    .c-title {
+        font-size: 20px;
+        color: #ffffff;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+
+    .c-btn {
+        width: 60%;
+    }
+}
