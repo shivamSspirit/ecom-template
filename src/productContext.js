@@ -29,9 +29,11 @@ const ProductContext = ({ children }) => {
     useEffect(() => {
         (async () => {
             try {
+                setLoading(true)
                 const response = await fetch(`https://fakestoreapi.com/products/categories`);
                 const categories = await response.json();
                 setAllcategories(categories);
+                setLoading(false)
             } catch (e) {
                 console.error(e);
             }
