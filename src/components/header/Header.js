@@ -18,12 +18,12 @@ function Header() {
                 </span>
 
                 <span className='cat-drop-box'>
-                    <select onChange={onCategoryChange} className='cate-select' id='cate-selector' name='categories' value={currentCategory}>
+                    {allcategories && <select onChange={onCategoryChange} className='cate-select' id='cate-selector' name='categories' value={currentCategory}>
                         <option selected={true} value={'all cate'}>All Category</option>
                         {allcategories?.map((category) => (
                             <option value={`${category}`}>{category}</option>
                         ))}
-                    </select>
+                    </select>}
                 </span>
 
                 <span className='search-box'>
